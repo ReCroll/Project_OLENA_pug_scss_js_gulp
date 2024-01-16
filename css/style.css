@@ -1118,7 +1118,8 @@ body._lock {
   flex: 1 1 auto;
 }
 
-[class*=__container] {
+[class*=__container],
+.swiper_container {
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -1649,10 +1650,6 @@ body._touch .menu__list > li._active .menu__arrow {
   position: relative;
   background: linear-gradient(217deg, rgba(255, 174, 0, 0.8), rgba(255, 174, 0, 0) 70.71%), linear-gradient(127deg, rgba(231, 138, 240, 0.8), rgba(231, 138, 240, 0) 70.71%), linear-gradient(336deg, rgba(0, 255, 255, 0.8), rgba(0, 255, 255, 0) 70.71%);
   padding-bottom: calc(40px + 60 * (100vw - 320px) / 930);
-}
-
-.page_container {
-  padding: 20px 15px 80px 15px;
 }
 
 .page__block {
@@ -2321,8 +2318,10 @@ body._touch .menu__list > li._active .menu__arrow {
 .swiper__text {
   position: relative;
   z-index: 11;
-  padding-right: calc(40px + 80 * (100vw - 320px) / 930);
-  padding-left: calc(40px + 80 * (100vw - 320px) / 930);
+  padding-right: calc(40px + 100 * (100vw - 320px) / 930);
+  padding-left: calc(40px + 100 * (100vw - 320px) / 930);
+  margin-top: calc(60px + 80 * (100vw - 320px) / 930);
+  margin-bottom: 20px;
 }
 
 .swiper__text .swiper-slide {
@@ -2469,6 +2468,11 @@ body._touch .menu__list > li._active .menu__arrow {
   left: 0;
 }
 
+.swiper__img-wrap picture:first-child img {
+  width: 100%;
+  opacity: 0;
+}
+
 .swiper__popup-img {
   position: absolute;
   width: 100%;
@@ -2556,11 +2560,6 @@ footer a:hover:after {
 }
 
 @media (min-width: 78.125em) {
-  .swiper__text {
-    margin-top: 90px;
-    margin-bottom: 20px;
-  }
-
   .swiper__text h3 {
     font-size: 30px;
   }
@@ -2839,13 +2838,17 @@ footer a:hover:after {
   }
 }
 
-@media (max-width: 671.98px) {
-  .page_container {
+@media (max-width: 711.98px) {
+  .page__container {
     zoom: 0.8;
   }
 }
 
 @media (max-width: 580.98px) {
+  .page__container {
+    zoom: 0.6;
+  }
+
   .theme__text {
     font-size: 18px;
     line-height: 28px;
@@ -2871,12 +2874,6 @@ footer a:hover:after {
   }
 }
 
-@media (max-width: 476.98px) {
-  .page_container {
-    zoom: 0.6;
-  }
-}
-
 @media (max-width: 467.98px) {
   .banner__content {
     left: 5%;
@@ -2887,8 +2884,8 @@ footer a:hover:after {
   }
 }
 
-@media (max-width: 349.98px) {
-  .page_container {
+@media (max-width: 425.98px) {
+  .page__container {
     zoom: 0.5;
   }
 }
