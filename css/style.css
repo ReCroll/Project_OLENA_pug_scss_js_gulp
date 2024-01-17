@@ -2315,6 +2315,14 @@ body._touch .menu__list > li._active .menu__arrow {
   margin-bottom: 60px;
 }
 
+.swiper-slide .swiper-link {
+  cursor: default;
+}
+
+.swiper-slide img {
+  cursor: pointer;
+}
+
 .swiper__text {
   position: relative;
   z-index: 11;
