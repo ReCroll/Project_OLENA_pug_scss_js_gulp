@@ -1039,21 +1039,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #ccc;
+  background-color: #d4a461;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background-color: #E6B267;
+  background-color: #947344;
 }
 
 ::-webkit-scrollbar {
   width: 2px;
-}
-
-* {
-  scrollbar-color: #E6B267 #ccc;
-  scrollbar-width: very-thin;
 }
 
 *,
